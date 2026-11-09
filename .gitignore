@@ -1,0 +1,25 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Node
+node_modules/
+dist/
+web/test-results/
+web/playwright-report/
+
+# Data (rebuilt by the pipeline; truth_42 is committed for reproducible demos)
+data/raw/
+data/artefacts/*
+!data/artefacts/truth_42.npz
+data/headroom.duckdb
+data/headroom.duckdb.wal
+
+# Env and OS
+.env
+.env.local
+.DS_Store
+Thumbs.db
